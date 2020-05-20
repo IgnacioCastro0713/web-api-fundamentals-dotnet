@@ -15,6 +15,12 @@ namespace TheCodeCamp.Data
             CreateMap<Camp, CampResDto>()
                 .ForMember(c => c.Venue, opt=> opt.MapFrom(m => m.Location.VenueName))
                 .ReverseMap();
+                
+            CreateMap<Talk, TalkResDto>()
+                .ReverseMap();
+
+            CreateMap<Speaker, SpeakerResDto>()
+                .ReverseMap();
 
             CreateMap<Camp, CampReqDto>()
                 .ReverseMap();
