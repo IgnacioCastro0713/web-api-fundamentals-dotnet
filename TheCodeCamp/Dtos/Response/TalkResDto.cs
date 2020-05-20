@@ -6,6 +6,6 @@
         public string Title { get; set; }
         public string Abstract { get; set; }
         public int Level { get; set; }
-        public SpeakerResDto SpeakerRes { get; set; }
+        public SpeakerResDto Speaker { get; set; }
     }
 }
